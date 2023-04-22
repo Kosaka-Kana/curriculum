@@ -1,0 +1,31 @@
+ー問１ー
+
+ルートブリッジ：switch3
+
+ー問2ー
+switch1
+①(switch1-switch3) 100
+②(switch1-switch2-switch4-switch3) 19+100+100=219
+
+switch2
+①(switch2-switch1-switch3) 19+100=119
+②(switch2-switch4-switch3) 100+100=200
+
+switch4
+①(switch4-switch3) 100
+②(switch4-switch2-switch1-switch3) 100+19+100=219
+
+switch1 F0/2:RP　上記の計算から
+switch1 F0/2:DP　対向ポートのため
+
+switch2 F0/1:RP　上記の計算から
+switch2 F0/2:DP　対向ポートのため
+
+switch3  E0/1:DP　ルートブリッジのため
+switch3 E0/2:DP　ルートブリッジのため
+
+switch4 E0/2:RP　上記の計算から
+switch4 E0/1:BP　各ポートにDPはひとつであり何も割り当てられてないため
+
+
+
