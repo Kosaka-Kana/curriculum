@@ -16,16 +16,16 @@ switch4
 ②(switch4-switch2-switch1-switch3) 100+19+100=219
 
 switch1 F0/2:RP　上記の計算から
-switch1 F0/2:DP　対向ポートのため
+switch1 F0/1:DP　対向ポートのため
 
 switch2 F0/1:RP　上記の計算から
-switch2 F0/2:DP　対向ポートのため
+switch2 F0/2:BP　上記計算から（F0/1のルートパスコストで比較）
 
 switch3  E0/1:DP　ルートブリッジのため
 switch3 E0/2:DP　ルートブリッジのため
 
 switch4 E0/2:RP　上記の計算から
-switch4 E0/1:BP　各ポートにDPはひとつであり何も割り当てられてないため
+switch4 E0/1:DP　上記計算から（E0/2 のルートパスコストで比較）
 
 
 
